@@ -22,15 +22,12 @@ const Form = () => {
 
     }
     let users = data?.map((u , inx) => (
-        <div key={inx}>
+        <div className='users' key={inx}>
             <h3>{u.name}</h3>
-            <p>{u.age}</p>
-            <hr />
         </div>
     ))
   return (
     <>
-    <h1>Form</h1>
     <form onSubmit={handleSubmit} action="">
         <input 
         value={name}
@@ -38,15 +35,13 @@ const Form = () => {
         type="text"
         placeholder='name'
         required />
-           <input 
-        value={age}
-        onChange={(event) => setAge(event.target.value)}
-        type="text"
-        placeholder='age'
-        required />
+      
         <button>Submit</button>
     </form>
-    <div className='mt'>{users}</div>
+       <div className="mt">
+
+        {users}
+       </div>
     </>
   )
 }

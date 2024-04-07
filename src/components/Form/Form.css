@@ -1,18 +1,46 @@
+
 form{
+    margin-top: 300px;
+    margin-bottom: 80px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     input{
-        padding: 10px;
-        margin: 0 20px;
+        padding: 12px;
+        width: 400px;
         outline: none;
+        border: 2px solid blue;
     }
     button{
-    padding: 10px;
-    width: 150px;
-    margin: 0 auto;
+        padding: 12px 20px;
+        background-color: rgb(70, 70, 245);
+        border: 1px solid blue;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+    }
+    button:hover{
+        color: blue;
+        background-color: #fff;
+        transition: .3s;
     }
 }
+.users{
+ border: 1px solid gray;
+ border-radius: 8px;
+ background-color: rgb(80, 80, 250);
+ color: #fff;
+ display: flex;
+ padding:  0 20px;
+ align-items: start;
+ margin-top: 20px;
+ width: 500px;
+ margin: 0 auto;
+ cursor: pointer;
+}
 .mt{
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
