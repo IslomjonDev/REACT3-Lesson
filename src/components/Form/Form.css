@@ -29,15 +29,27 @@ form{
 .users{
  border: 1px solid gray;
  border-radius: 8px;
- background-color: rgb(80, 80, 250);
- color: #fff;
+ background-color: rgb(195, 195, 255);
+ color: black;
  display: flex;
  padding:  0 20px;
- align-items: start;
+ align-items: center;
+ justify-content: space-between;
  margin-top: 20px;
  width: 500px;
  margin: 0 auto;
- cursor: pointer;
+ button{
+    border: none;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+ }
+}
+.trash{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
 }
 .mt{
     display: flex;

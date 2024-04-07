@@ -1,5 +1,6 @@
 import React , {useState} from 'react'
 import './Form.css'
+import { FaRegTrashAlt } from "react-icons/fa";
 
 const Form = () => {
     const [name , setName] = useState("")
@@ -23,7 +24,10 @@ const Form = () => {
     }
     let users = data?.map((u , inx) => (
         <div className='users' key={inx}>
+
             <h3>{u.name}</h3>
+            <button><FaRegTrashAlt className='trash' />
+</button>
         </div>
     ))
   return (
@@ -39,7 +43,6 @@ const Form = () => {
         <button>Submit</button>
     </form>
        <div className="mt">
-
         {users}
        </div>
     </>
